@@ -26,7 +26,7 @@
 	--leaves-top-bg-1: #2fb82f;
 	--leaves-top-bg-2: #5fe85f;
 	--star-bg: #ffdd00;
-	--shine-bg: #ffeb69;
+	
 	--snow-bg: #f2f2f2;
 	--tree-width: 200px;
 	--tree-height: 400px;
@@ -2659,9 +2659,9 @@
 	height: 100%;
 	padding: 0;
 	margin: 0;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(to bottom, #1b2735 , #090a0f );
 	overflow: hidden;
-	 background-attachment: fixed;
+	 
 	 
 	
 }
@@ -2869,31 +2869,7 @@
 	top: -33px;
 	left: -44px;
 }
-.shine {
-	background: var(--shine-bg);
-	height: 90px;
-	width: 90px;
-	position: absolute;
-	top: -45px;
-	left: calc(50% - 45px);
-	border-radius: 50%;
-	transform: translateZ(40px);
-	filter: blur(20px);
-	opacity: 0.6;
-	animation: 5s shine linear infinite;
-}
-@keyframes shine {
-	0%   { transform: scale(1) translateZ(40px); }
-	50%  { transform: scale(1.5) translateZ(40px); }
-	100% { transform: scale(1) translateZ(40px); }
-}
-@keyframes snow-x {
-	0%   { transform: translateX(0px); }
-	25%  { transform: translateX(5px); }
-	50%  { transform: translateX(0px); }
-	75%  { transform: translateX(-5px); }
-	100% { transform: translateX(0px); }
-}
+
 .trinity-rings-spinner, .trinity-rings-spinner * {
       box-sizing: border-box;
     }
